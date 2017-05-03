@@ -1,4 +1,4 @@
-# dot files in mac osx#
+# dot files in mac osx #
 
 ## .bashrc ##
 
@@ -9,4 +9,12 @@ add `source ~/.bashrc`
 ### add alias ###
 execute command `source ~/.bashrc`
 
+### with parameters ###
+$1 means parameters 1
+
+```
+testparam() {
+    echo $1
+}
+```
 
