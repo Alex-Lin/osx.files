@@ -1,6 +1,7 @@
 ##################################################
 ## util
 alias bashrc='cp ~/.bashrc ~/work/osx.files/'
+alias cleardns='dscacheutil -flushcache'
 
 
 ##################################################
