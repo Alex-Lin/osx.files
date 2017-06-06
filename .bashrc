@@ -1,12 +1,20 @@
 ##################################################
 ## util
-alias bashrc='cp ~/.bashrc ~/work/osx.files/'
-alias cleardns='dscacheutil -flushcache'
+alias bashrc='cp ~/.bashrc ~/work/osx.files/ && source ~/.bashrc'
+alias cleardns='sudo killall -HUP mDNSResponder && sudo killall mDNSResponderHelper && sudo dscacheutil -flushcache'
 
+alias lls='ls -all'
 
 ##################################################
 ## vpn
 alias mcvpn='sudo /usr/local/Cellar/openvpn/2.4.0/sbin/openvpn --config /Users/linli/openvpn/linli.ovpn'
+
+alias cjvpn='sudo /usr/local/Cellar/openvpn/2.4.0/sbin/openvpn --config /Users/linli/cjopenvpn/linli.ovpn'
+
+
+##################################################
+## http proxy
+alias proxy='http_proxy=localhost:8123'
 
 ##################################################
 ## node js
