@@ -1,6 +1,15 @@
 # proxy alias 
 
-## install polipo
+## socks proxy
+
+execute `networksetup -listnetworkserviceorder` first to identified which network card you want to set `"Ethernet"`
+
+turn on: `networksetup -setsocksfirewallproxy "Ethernet" localhost 8080`
+turn off: `networksetup -setsocksfirewallproxystate "Ethernet" off`
+
+## http proxy
+
+### install polipo
 
 `brew install polipo`
 `vim ~/.polipo`
@@ -24,10 +33,10 @@ censorReferer = maybe
 
 ```
 
-## start polipo as services
+### start polipo as services
 
 `brew services start polipo`
 
-## use alias
+### use alias
 
 `proxy curl www.google.com.hk`

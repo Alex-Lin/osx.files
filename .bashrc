@@ -16,7 +16,7 @@ alias cjvpn='sudo /usr/local/Cellar/openvpn/2.4.0/sbin/openvpn --config /Users/l
 alias proxy='http_proxy=localhost:8123'
 
 ##################################################
-## proxy
+## socks proxy
 alias son='networksetup -setsocksfirewallproxy "Thunderbolt Ethernet" 192.168.3.188 2080'
 alias soff='networksetup -setsocksfirewallproxystate "Thunderbolt Ethernet" off'
 
