@@ -4,6 +4,10 @@ alias bashrc='cp ~/.bashrc ~/work/osx.files/ && source ~/.bashrc'
 alias cleardns='sudo killall -HUP mDNSResponder && sudo killall mDNSResponderHelper && sudo dscacheutil -flushcache'
 
 alias lls='ls -all'
+alias mtr='sudo /usr/local/sbin/mtr'
+
+## rebuild spotlight index
+alias spotlight='sudo mdutil -i on /'
 
 ##################################################
 ## vpn
