@@ -43,3 +43,7 @@ alias cjssh='ssh root@inner.linux.citrusjoy.cn'
 kssh() {
     ssh -i ~/kskey/120.92.$1 root@120.92.$1
 }
+
+##################################################
+## sync github alias
+alias cpemacs='cp ~/.spacemacs ~/work/spacemacs.file/'
