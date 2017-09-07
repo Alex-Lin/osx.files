@@ -6,6 +6,10 @@ alias cleardns='sudo killall -HUP mDNSResponder && sudo killall mDNSResponderHel
 alias lls='ls -all'
 alias mtr='sudo /usr/local/sbin/mtr'
 
+cdh() {
+    cd ~/work/$1
+}
+
 ## rebuild spotlight index
 alias spotlight='sudo mdutil -i on /'
 
