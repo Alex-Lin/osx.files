@@ -13,6 +13,7 @@ alias spotlight='sudo mdutil -i on /'
 ## vpn
 alias mcvpn='sudo /usr/local/Cellar/openvpn/2.4.0/sbin/openvpn --config /Users/linli/openvpn/linli.ovpn'
 alias cjvpn='sudo /usr/local/Cellar/openvpn/2.4.0/sbin/openvpn --config /Users/linli/cjopenvpn/linli.ovpn'
+alias znsvpn='sudo /usr/local/Cellar/openvpn/2.4.0/sbin/openvpn --config /Users/linli/znsopenvpn/znsvpnuser.conf'
 
 
 ##################################################
@@ -32,6 +33,8 @@ alias npmregtaobao='npm config set registry=http://registry.npm.taobao.org && np
 ##################################################
 ## ssh alias
 alias keplerssh='ssh -i ~/kepler_key.pem root@kepler-update.citrusjoy.com'
+alias yyssh='ssh -i ~/tdyiyou root@139.199.27.110'
+alias cjssh='ssh root@inner.linux.citrusjoy.cn'
 
 kssh() {
     ssh -i ~/kskey/120.92.$1 root@120.92.$1
